@@ -1,0 +1,22 @@
+create table gbcustomer(
+ cid number,
+ cfname varchar2(100),
+ clname varchar2(100),
+ cage number,
+ email varchar2(100),
+ username varchar2(100),
+ password varchar2(100),
+ reg_date date
+)
+
+
+alter table gbcustomer rename column cuname to username;
+alter table gbcustomer rename column cpass to password;
+
+
+create table gbaccount(
+ username varchar2(100),
+ accno number,
+ accbal number(9,2),
+ add_time date
+)
